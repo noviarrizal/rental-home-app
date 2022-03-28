@@ -6,7 +6,7 @@ import { GoVerified } from "react-icons/go";
 import millify from "millify";
 
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
-import ImageScrollbar from "../../components/ImageScrollBar.js";
+import ImageScrollBar from "../../components/ImageScrollBar.js";
 
 const PropertyDetails = ({
 	propertyDetails: {
@@ -27,7 +27,7 @@ const PropertyDetails = ({
 	},
 }) => (
 	<Box maxWidth="1000px" margin="auto" p="4">
-		{photos && <ImageScrollbar data={photos} />}
+		{photos && <ImageScrollBar data={photos} />}
 		<Box w="full" p="6">
 			<Flex paddingTop="2" alignItems="center">
 				<Box paddingRight="3" color="green.400">
