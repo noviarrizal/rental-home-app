@@ -1,8 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Flex, Box, Text, Button } from "@chakra-ui/react";
+import {
+	Flex,
+	Box,
+	Text,
+	Button,
+	Menu,
+	MenuButton,
+	MenuList,
+	MenuItem,
+	IconButton,
+} from "@chakra-ui/react";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 import Property from "../components/Property";
+import { useUser } from "@auth0/nextjs-auth0";
+import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
+import { FiKey } from "react-icons/fi";
 
 const Banner = ({
 	purpose,
